@@ -56,20 +56,6 @@ class AdCreateView(CreateAPIView):
     serializer_class = AdCreateSerializer
 
 
-# search_by = None
-
-# search_by_cat = request.GET.get('cat', None)
-# search_by_text = request.GET.get('text', None)
-# search_by_location = request.GET.get('location', None)
-# search_by_price_from = request.GET.get('price_from', None)
-# search_by_price_to = request.GET.get('price_to', None)
-
-# if search_by_cat:
-#     search_by = search_by_cat
-
-# def get_queryset(self):
-
-
 @method_decorator(csrf_exempt, name="dispatch")
 class AdUpdateImageView(UpdateView):
     """Ads update image View"""
